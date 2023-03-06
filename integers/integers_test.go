@@ -1,20 +1,20 @@
 package integers
 
 import "fmt"
-/*import "testing"*/
+import "testing"
 
-/*func TestAdder(t *testing.T) {*/
-	/*sum := Add(2, 2)*/
-	/*want := 4*/
-    /*assertCorrectMessage(t, sum, want)*/
-/*}*/
+func TestAdder(t *testing.T) {
+    sum := Add(2, 2)
+    want := 4
+    assertCorrectMessage(t, sum, want)
+}
 
-/*func assertCorrectMessage(t testing.TB, got, want int) {*/
-	/*t.Helper()*/
-	/*if got != want {*/
-		/*t.Errorf("got %q want %q", got, want)*/
-	/*}*/
-/*}*/
+func assertCorrectMessage(t testing.TB, got, want int) {
+    t.Helper()
+    if got != want {
+        t.Errorf("got %q want %q", got, want)
+    }
+}
 
 func ExampleAdd() {
 	sum := Add(1, 5)
