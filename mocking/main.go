@@ -7,5 +7,6 @@ import (
 
 
 func main() {
-	internal.Countdown(os.Stdout)
+    sleeper := &internal.DefaultSleeper{}
+	internal.Countdown(os.Stdout, sleeper)
 }

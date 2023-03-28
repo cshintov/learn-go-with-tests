@@ -3,7 +3,7 @@ package internal
 import (
 	"fmt"
 	"io"
-	"time"
+    "time"
 )
 
 const countdownStart = 3
